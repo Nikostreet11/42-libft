@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/04 16:41:14 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/04 16:51:27 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ TESTS =					\
 	ft_strncmp_test.c	\
 	ft_memchr_test.c	\
 	ft_memcmp_test.c	\
-	#ft_strnstr_test.c	\
+	ft_strnstr_test.c	\
 	#ft_atoi_test.c		\
 
 # Libraries

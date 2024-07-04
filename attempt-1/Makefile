@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/04 16:41:21 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/04 16:51:29 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ SOURCES = 			\
 	ft_strncmp.c	\
 	ft_memchr.c		\
 	ft_memcmp.c		\
-	#ft_strnstr.c	\
+	ft_strnstr.c	\
 	#ft_atoi.c		\
 
 # Target
