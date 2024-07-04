@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Temp
+.42git/
+bin/
+
+# Editor specific directories
+.vscode
