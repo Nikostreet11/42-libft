@@ -6,11 +6,12 @@
 /*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 11:39:55 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/04 12:23:14 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/04 15:26:15 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "utils.h"
 #include "libft.h"

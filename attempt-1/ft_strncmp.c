@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 12:49:05 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/02 15:10:53 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/04 15:20:46 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,18 +30,3 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (value);
 }
-
-/*int	main(int argc, char *argv[])
-{
-	int		ret_val;
-
-	if (argc < 4)
-	{
-		return (1);
-	}
-	ret_val = ft_strncmp(argv[1], argv[2], atoi(argv[3]));
-	printf("Received: %d\n", ret_val);
-	ret_val = strncmp(argv[1], argv[2], atoi(argv[3]));
-	printf("Expected: %d\n", ret_val);
-	return (0);
-}*/
