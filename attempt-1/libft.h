@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 12:03:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/15 18:09:54 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/15 18:14:47 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif // LIBFT_H

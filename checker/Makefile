@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/15 18:10:36 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/15 18:46:48 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,6 +59,7 @@ TESTS =					\
 	ft_atoi_test.c		\
 	ft_calloc_test.c	\
 	ft_strdup_test.c	\
+	ft_substr_test.c	\
 
 # Libraries
 LIBRARIES =	\
