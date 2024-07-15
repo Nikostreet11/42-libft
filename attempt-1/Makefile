@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/04 17:30:08 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/15 18:10:33 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,8 @@ SOURCES = 			\
 	ft_memcmp.c		\
 	ft_strnstr.c	\
 	ft_atoi.c		\
+	ft_calloc.c		\
+	ft_strdup.c		\
 
 # Target
 TARGET = libft.a

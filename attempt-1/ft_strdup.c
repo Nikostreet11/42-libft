@@ -1,20 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/18 15:45:41 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/15 12:54:53 by nipollin         ###   ########.fr       */
+/*   Created: 2024/07/15 12:32:59 by nipollin          #+#    #+#             */
+/*   Updated: 2024/07/15 12:40:46 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	UTILS_H
-# define UTILS_H
+#include <stdlib.h>
+#include <errno.h>
+#include "libft.h"
 
-# include <stdint.h>
+char	*ft_strdup(const char *s)
+{
+	int		idx;
+	int		size;
+	char	*d;
 
-void	ft_write_memory(void *mem, size_t siz);
-
-#endif // UTILS_H
+	size = ft_strlen(s) + 1;
+	d = (char *) malloc(size * sizeof(char));
+	if (d == NULL)
+	{
+		errno = ENOMEM;
+		return (NULL);
+	}
+	idx = 0;
+	while (idx < size)
+	{
+		d[idx] = s[idx];
+		idx++;
+	}
+	return (d);
+}
