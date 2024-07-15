@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/04 15:22:09 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/15 13:00:27 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(int argc, char *argv[])
 	char	test1[42];
 	int		siz;
 
-	if (argc < 3)
+	if (argc != 3)
 	{
 		printf("Error. Usage: src (string), size (uint)\n");
 		return (1);
