@@ -6,11 +6,11 @@
 /*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 13:44:21 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/04 17:35:27 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/15 12:05:37 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

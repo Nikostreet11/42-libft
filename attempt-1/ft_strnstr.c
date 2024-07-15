@@ -6,11 +6,11 @@
 /*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 12:49:05 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/04 17:16:27 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/15 12:05:01 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 #define TRUE 1
 #define FALSE 0
