@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/17 10:31:39 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/17 13:45:07 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,9 @@ FTLDIR := $(addprefix	$(TRYDIR)/, $(FTLDIR))
 # Sources
 SOURCES = 				\
 	ft_write_memory.c	\
+	ft_write_strstr.c	\
+	ft_free_strstr.c	\
+	ft_strstrlen.c		\
 
 # Tests
 TESTS =					\
@@ -62,6 +65,7 @@ TESTS =					\
 	ft_substr_test.c	\
 	ft_strjoin_test.c	\
 	ft_strtrim_test.c	\
+	ft_split_test.c		\
 
 # Libraries
 LIBRARIES =	\
@@ -85,13 +89,13 @@ TARGET = $(patsubst $(TSTDIR)/%.c,$(BLDDIR)/%, $(TST))
 all: $(TARGET)
 
 $(BLDDIR)/%: $(OBJ) $(TSTDIR)/%.c | $(BLDDIR)
-	$(CC) $(CFLAGS) $(INC) $(FTH) -o $@ $^ $(LDP) $(LDN) $(OTH)
+	$(CC) $(CFLAGS) $(INC) $(FTH) -o $@ $^ $(LDP) $(LDN)
 
 # $(OBJDIR)/%.o: $(TSTDIR)/%.c | $(OBJDIR)
 # 	$(CC) $(CFLAGS) $(INC) $(FTH) -c -o $@ $<
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c | $(OBJDIR)
-	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
+	$(CC) $(CFLAGS) $(INC) $(FTH) -c -o $@ $<
 
 $(OBJDIR) $(BLDDIR):
 	mkdir -p $@

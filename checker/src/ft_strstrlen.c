@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   ft_strstrlen.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/18 15:45:41 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/17 13:37:32 by nipollin         ###   ########.fr       */
+/*   Created: 2024/06/18 15:50:56 by nipollin          #+#    #+#             */
+/*   Updated: 2024/07/17 13:35:04 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	UTILS_H
-# define UTILS_H
+#include "utils.h"
 
-# include <stddef.h>
+size_t	ft_strstrlen(char **s)
+{
+	size_t	idx;
 
-void	ft_write_memory(void *mem, size_t siz);
-void	ft_print_strstr(char **strstr);
-char	**ft_free_strstr(char **str, size_t len);
-size_t	ft_strstrlen(char **s);
-
-#endif // UTILS_H
+	idx = 0;
+	while (s[idx])
+	{
+		idx++;
+	}
+	return (idx);
+}

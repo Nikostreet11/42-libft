@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   ft_write_strstr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/18 15:45:41 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/17 13:37:32 by nipollin         ###   ########.fr       */
+/*   Created: 2024/07/17 13:08:39 by nipollin          #+#    #+#             */
+/*   Updated: 2024/07/17 13:43:05 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	UTILS_H
-# define UTILS_H
+#include <unistd.h>
+#include "utils.h"
+#include "libft.h"
 
-# include <stddef.h>
+void	ft_print_strstr(char **strstr)
+{
+	char	*str;
+	int		idx;
 
-void	ft_write_memory(void *mem, size_t siz);
-void	ft_print_strstr(char **strstr);
-char	**ft_free_strstr(char **str, size_t len);
-size_t	ft_strstrlen(char **s);
-
-#endif // UTILS_H
+	idx = 0;
+	while (strstr[idx])
+	{
+		str = strstr[idx];
+		write(STDOUT_FILENO, str, ft_strlen(str));
+		write(STDOUT_FILENO, "\n", 1);
+		idx++;
+	}
+}
