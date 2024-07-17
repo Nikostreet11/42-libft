@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+         #
+#    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/15 18:46:51 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/17 09:55:53 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,7 @@ SOURCES = 			\
 	ft_calloc.c		\
 	ft_strdup.c		\
 	ft_substr.c		\
+	ft_strjoin.c	\
 
 # Target
 TARGET = libft.a
