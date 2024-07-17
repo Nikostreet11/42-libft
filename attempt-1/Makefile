@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/17 09:55:53 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/17 10:31:28 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,7 @@ SOURCES = 			\
 	ft_strdup.c		\
 	ft_substr.c		\
 	ft_strjoin.c	\
+	ft_strtrim.c	\
 
 # Target
 TARGET = libft.a

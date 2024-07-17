@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/17 09:56:01 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/17 10:31:39 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,6 +61,7 @@ TESTS =					\
 	ft_strdup_test.c	\
 	ft_substr_test.c	\
 	ft_strjoin_test.c	\
+	ft_strtrim_test.c	\
 
 # Libraries
 LIBRARIES =	\
