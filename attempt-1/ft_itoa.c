@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 14:00:49 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/18 19:18:08 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/30 17:21:57 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,14 @@
 static size_t	ft_strccat(char *dest, const char c)
 {
 	size_t	idx;
-	size_t	size;
 
-	size = ft_strlen(dest);
 	idx = 0;
-	while (idx < size && dest[idx])
+	while (dest[idx])
 	{
 		idx++;
 	}
-	if (idx + 1 < size && c)
-	{
-		dest[idx] = c;
-		idx++;
-	}
-	if (idx < size)
-	{
-		dest[idx] = '\0';
-	}
+	dest[idx] = c;
+	dest[idx + 1] = '\0';
 	return (idx + 1);
 }
 
