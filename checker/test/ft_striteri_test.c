@@ -6,13 +6,11 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/31 11:47:18 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/31 11:58:08 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
 #include "utils.h"
 #include "libft.h"
 
@@ -32,11 +30,6 @@ int	main(int argc, char *argv[])
 	}
 	str = argv[1];
 	ft_striteri(str, ft_iter);
-	if (!str)
-	{
-		printf("Error.");
-		return (2);
-	}
 	printf("Received: %s\n", str);
 	return (0);
 }
