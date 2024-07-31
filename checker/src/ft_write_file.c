@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   ft_write_file.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/18 15:45:41 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/31 19:22:31 by nipollin         ###   ########.fr       */
+/*   Created: 2024/07/17 13:08:39 by nipollin          #+#    #+#             */
+/*   Updated: 2024/07/31 19:33:22 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	UTILS_H
-# define UTILS_H
+#include <unistd.h>
+#include "utils.h"
 
-# include <stddef.h>
+#define BUFFER_SIZE 42
 
-void	ft_write_memory(void *mem, size_t siz);
-void	ft_write_strstr(char **strstr);
-char	**ft_free_strstr(char **str, size_t len);
-size_t	ft_strstrlen(char **s);
-void	ft_write_file(int fd);
+void	ft_write_file(int fd)
+{
+	char	dest[BUFFER_SIZE];
+	int		size;
 
-#endif // UTILS_H
+	size = 1;
+	while (size > 0)
+	{
+		size = read(fd, dest, BUFFER_SIZE);
+		if (size < 0)
+		{
+			write(STDOUT_FILENO, "Error.\n", 7);
+		}
+		write(STDOUT_FILENO, dest, size);
+	}
+}
