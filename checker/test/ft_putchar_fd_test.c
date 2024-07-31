@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/31 13:11:23 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/31 18:26:05 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ int	main(int argc, char *argv[])
 	lseek(fd, 0, SEEK_SET);
 	read(fd, &dest, 1);
 	printf("Received: %c\n", dest);
+	close(fd);
 	return (0);
 }
