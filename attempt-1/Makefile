@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/18 18:54:08 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/31 11:31:03 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,6 +51,7 @@ SOURCES = 			\
 	ft_strtrim.c	\
 	ft_split.c		\
 	ft_itoa.c		\
+	ft_strmapi.c	\
 
 # Target
 TARGET = libft.a
