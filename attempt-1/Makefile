@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/31 12:05:35 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/31 18:16:45 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,6 +54,8 @@ SOURCES = 			\
 	ft_strmapi.c	\
 	ft_striteri.c	\
 	ft_putchar_fd.c	\
+	ft_putstr_fd.c	\
+	ft_putendl_fd.c	\
 
 # Target
 TARGET = libft.a
