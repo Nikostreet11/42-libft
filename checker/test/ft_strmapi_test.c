@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/31 11:33:34 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/31 11:43:55 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 static char	ft_map(unsigned int idx, char c)
 {
-	return (c + - 5 + idx % 10);
+	return (c - 5 + idx % 10);
 }
 
 int	main(int argc, char *argv[])
