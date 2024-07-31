@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 13:08:39 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/17 13:43:05 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/31 19:22:37 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "utils.h"
 #include "libft.h"
 
-void	ft_print_strstr(char **strstr)
+void	ft_write_strstr(char **strstr)
 {
 	char	*str;
 	int		idx;

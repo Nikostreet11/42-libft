@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/17 13:53:07 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/07/31 19:22:31 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(int argc, char *argv[])
 		return (2);
 	}
 	write(STDOUT_FILENO, "Received:\n", 10);
-	ft_print_strstr(split);
+	ft_write_strstr(split);
 	ft_free_strstr(split, ft_strstrlen(split));
 	return (0);
 }
