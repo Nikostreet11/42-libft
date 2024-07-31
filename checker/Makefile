@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/31 11:31:15 by nipollin         ###   ########.fr        #
+#    Updated: 2024/07/31 11:44:40 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,6 +68,7 @@ TESTS =					\
 	ft_split_test.c		\
 	ft_itoa_test.c		\
 	ft_strmapi_test.c	\
+	ft_striteri_test.c	\
 
 # Libraries
 LIBRARIES =	\
