@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/07/31 19:19:07 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/08 17:58:35 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,6 +73,7 @@ TESTS =						\
 	ft_putchar_fd_test.c	\
 	ft_putstr_fd_test.c		\
 	ft_putendl_fd_test.c	\
+	ft_putnbr_fd_test.c		\
 
 # Libraries
 LIBRARIES =	\
