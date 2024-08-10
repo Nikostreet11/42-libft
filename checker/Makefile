@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/08 17:58:35 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/10 22:01:52 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,6 +75,9 @@ TESTS =						\
 	ft_putendl_fd_test.c	\
 	ft_putnbr_fd_test.c		\
 
+BONUS_TESTS =				\
+	ft_lstnew_test.c		\
+
 # Libraries
 LIBRARIES =	\
 	ft		\
@@ -88,19 +91,21 @@ FTH = $(addprefix	-I, $(FTHDIR))
 LDP = $(addprefix	-L, $(FTLDIR))
 LDN = $(addprefix	-l, $(LIBRARIES))
 
+TST_BNS = $(addprefix	$(TSTDIR)/, $(BONUS_TESTS))
+
 # Target
 TARGET = $(patsubst $(TSTDIR)/%.c,$(BLDDIR)/%, $(TST))
+TARGET_BONUS = $(patsubst $(TSTDIR)/%.c,$(BLDDIR)/%, $(TST_BNS))
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
 .PRECIOUS: obj/%.o
 
 all: $(TARGET)
 
+bonus: all $(TARGET_BONUS)
+
 $(BLDDIR)/%: $(OBJ) $(TSTDIR)/%.c | $(BLDDIR)
 	$(CC) $(CFLAGS) $(INC) $(FTH) -o $@ $^ $(LDP) $(LDN)
-
-# $(OBJDIR)/%.o: $(TSTDIR)/%.c | $(OBJDIR)
-# 	$(CC) $(CFLAGS) $(INC) $(FTH) -c -o $@ $<
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c | $(OBJDIR)
 	$(CC) $(CFLAGS) $(INC) $(FTH) -c -o $@ $<
@@ -114,6 +119,7 @@ clean:
 
 fclean: clean
 	rm -f $(TARGET)
+	rm -f $(TARGET_BONUS)
 	rm -fd $(BLDDIR)
 
 re: fclean all

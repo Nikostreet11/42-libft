@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/08 17:58:15 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/10 22:06:25 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,14 +58,21 @@ SOURCES = 			\
 	ft_putendl_fd.c	\
 	ft_putnbr_fd.c	\
 
+SOURCES_BONUS =		\
+	ft_lstnew.c		\
+
 # Target
 TARGET = libft.a
 
-SRC = $(addprefix	$(SRCDIR)/, $(SOURCES))
 INC = $(addprefix	-I, $(INCDIR))
+
+SRC = $(addprefix	$(SRCDIR)/, $(SOURCES))
 OBJ = $(patsubst	$(SRCDIR)/%.c, $(OBJDIR)/%.o, $(SRC))
 
-.PHONY: all clean fclean re
+SRC_BNS = $(addprefix	$(SRCDIR)/, $(SOURCES_BONUS))
+OBJ_BNS = $(patsubst	$(SRCDIR)/%.c, $(OBJDIR)/%.o, $(BNS_SRC))
+
+.PHONY: all clean fclean re bonus
 
 all: $(OBJDIR) $(TARGET)
 
@@ -73,10 +80,15 @@ $(OBJDIR):
 	mkdir -p $(OBJDIR)
 
 $(TARGET): $(OBJ)
-	ar rs $(TARGET) $(OBJ)
+	ar rs $@ $^
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
+
+bonus: $(OBJDIR) $(TARGET)_bonus
+
+$(TARGET)_bonus: $(OBJ) $(BNS_OBJ)
+	ar rs $(TARGET) $^
 
 clean:
 	rm -f $(OBJDIR)/*.o
