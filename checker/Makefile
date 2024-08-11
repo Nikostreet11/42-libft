@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/11 16:13:06 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/11 16:33:47 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,6 +81,7 @@ BONUS_TESTS =				\
 	ft_lstadd_front_test.c	\
 	ft_lstsize_test.c		\
 	ft_lstlast_test.c		\
+	ft_lstadd_back_test.c	\
 
 # Libraries
 LIBRARIES =	\
