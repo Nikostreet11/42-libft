@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   ft_lstget.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/18 15:45:41 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/11 17:11:15 by nipollin         ###   ########.fr       */
+/*   Created: 2024/08/11 01:49:10 by nipollin          #+#    #+#             */
+/*   Updated: 2024/08/11 17:12:55 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	UTILS_H
-# define UTILS_H
+#include "utils.h"
 
-# include <stddef.h>
-# include "libft.h"
+t_list	*ft_lstget(t_list *node, size_t pos)
+{
+	size_t	idx;
 
-void	ft_write_memory(void *mem, size_t siz);
-void	ft_write_strstr(char **strstr);
-char	**ft_free_strstr(char **str, size_t len);
-size_t	ft_strstrlen(char **s);
-void	ft_write_file(int fd);
-void	ft_write_lst(t_list *node);
-t_list	*ft_lstget(t_list *node, size_t pos);
-
-#endif // UTILS_H
+	if (!(node))
+	{
+		return (NULL);
+	}
+	idx = 0;
+	while (node && idx < pos)
+	{
+		node = node->next;
+		idx++;
+	}
+	if (idx == pos)
+	{
+		return (node);
+	}
+	return (NULL);
+}

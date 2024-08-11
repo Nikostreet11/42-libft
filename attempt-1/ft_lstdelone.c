@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.h                                            :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/18 15:45:41 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/11 17:11:15 by nipollin         ###   ########.fr       */
+/*   Created: 2024/08/09 12:50:32 by nipollin          #+#    #+#             */
+/*   Updated: 2024/08/11 16:47:35 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	UTILS_H
-# define UTILS_H
+#include <stdlib.h>
+#include "libft.h"
 
-# include <stddef.h>
-# include "libft.h"
-
-void	ft_write_memory(void *mem, size_t siz);
-void	ft_write_strstr(char **strstr);
-char	**ft_free_strstr(char **str, size_t len);
-size_t	ft_strstrlen(char **s);
-void	ft_write_file(int fd);
-void	ft_write_lst(t_list *node);
-t_list	*ft_lstget(t_list *node, size_t pos);
-
-#endif // UTILS_H
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
+{
+	if (!lst)
+	{
+		return ;
+	}
+	if (del)
+	{
+		del(lst->content);
+	}
+	free(lst);
+}
