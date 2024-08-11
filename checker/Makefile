@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/10 22:01:52 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/11 02:13:59 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ SOURCES = 				\
 	ft_free_strstr.c	\
 	ft_strstrlen.c		\
 	ft_write_file.c		\
+	ft_write_lst.c		\
 
 # Tests
 TESTS =						\
@@ -77,6 +78,7 @@ TESTS =						\
 
 BONUS_TESTS =				\
 	ft_lstnew_test.c		\
+	ft_lstadd_front_test.c	\
 
 # Libraries
 LIBRARIES =	\

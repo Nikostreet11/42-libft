@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/10 22:06:25 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/11 02:07:47 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,8 +58,9 @@ SOURCES = 			\
 	ft_putendl_fd.c	\
 	ft_putnbr_fd.c	\
 
-SOURCES_BONUS =		\
-	ft_lstnew.c		\
+SOURCES_BONUS =			\
+	ft_lstnew.c			\
+	ft_lstadd_front.c	\
 
 # Target
 TARGET = libft.a
@@ -70,7 +71,7 @@ SRC = $(addprefix	$(SRCDIR)/, $(SOURCES))
 OBJ = $(patsubst	$(SRCDIR)/%.c, $(OBJDIR)/%.o, $(SRC))
 
 SRC_BNS = $(addprefix	$(SRCDIR)/, $(SOURCES_BONUS))
-OBJ_BNS = $(patsubst	$(SRCDIR)/%.c, $(OBJDIR)/%.o, $(BNS_SRC))
+OBJ_BNS = $(patsubst	$(SRCDIR)/%.c, $(OBJDIR)/%.o, $(SRC_BNS))
 
 .PHONY: all clean fclean re bonus
 
@@ -87,7 +88,7 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 
 bonus: $(OBJDIR) $(TARGET)_bonus
 
-$(TARGET)_bonus: $(OBJ) $(BNS_OBJ)
+$(TARGET)_bonus: $(OBJ) $(OBJ_BNS)
 	ar rs $(TARGET) $^
 
 clean:
