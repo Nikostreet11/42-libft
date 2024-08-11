@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_write_lst.c                                     :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/11 01:49:10 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/11 16:21:13 by nipollin         ###   ########.fr       */
+/*   Created: 2024/08/09 12:50:32 by nipollin          #+#    #+#             */
+/*   Updated: 2024/08/11 16:10:18 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "utils.h"
-#include "libft.h"
+#include <libft.h>
 
-void	ft_write_lst(t_list *node)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if (!node)
+	if (!lst)
 	{
-		write(STDOUT_FILENO, "(nil)", 5);
+		return (NULL);
 	}
-	while (node)
+	while (lst->next)
 	{
-		write(STDOUT_FILENO, "[ ", 2);
-		write(STDOUT_FILENO, node->content, ft_strlen(node->content));
-		write(STDOUT_FILENO, " ]", 2);
-		node = node->next;
-		if (node)
-		{
-			write(STDOUT_FILENO, " -> ", 4);
-		}
+		lst = lst->next;
 	}
+	return (lst);
 }

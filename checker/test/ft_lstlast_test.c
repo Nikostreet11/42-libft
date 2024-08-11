@@ -1,34 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_write_lst.c                                     :+:      :+:    :+:   */
+/*   ft_lstlast_test.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/11 01:49:10 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/11 16:21:13 by nipollin         ###   ########.fr       */
+/*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
+/*   Updated: 2024/08/11 16:20:02 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include <unistd.h>
 #include "utils.h"
 #include "libft.h"
 
-void	ft_write_lst(t_list *node)
+int	main(int argc, char **argv)
 {
-	if (!node)
+	t_list	*head;
+	t_list	*node;
+	t_list	*tail;
+	size_t	idx;
+	
+	if (argc < 1)
 	{
-		write(STDOUT_FILENO, "(nil)", 5);
+		printf("Error.\n");
+		return (1);
 	}
-	while (node)
+	head = NULL;
+	idx = 0;
+	while (idx + 1 < (size_t) argc)
 	{
-		write(STDOUT_FILENO, "[ ", 2);
-		write(STDOUT_FILENO, node->content, ft_strlen(node->content));
-		write(STDOUT_FILENO, " ]", 2);
-		node = node->next;
-		if (node)
-		{
-			write(STDOUT_FILENO, " -> ", 4);
-		}
+		node = ft_lstnew(argv[idx + 1]);
+		ft_lstadd_front(&head, node);
+		idx++;
 	}
+	tail = ft_lstlast(head);
+	write(STDOUT_FILENO, "Received: ", 10);
+	ft_write_lst(tail);
+	write(STDOUT_FILENO, "\n", 1);
+	// TODO: free list
+	return (0);
 }
