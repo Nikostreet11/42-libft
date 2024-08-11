@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/11 02:07:47 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/11 15:24:46 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,6 +61,7 @@ SOURCES = 			\
 SOURCES_BONUS =			\
 	ft_lstnew.c			\
 	ft_lstadd_front.c	\
+	ft_lstsize.c		\
 
 # Target
 TARGET = libft.a
