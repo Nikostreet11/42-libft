@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 15:45:41 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/20 18:18:56 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 15:36:34 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ void	ft_write_file(int fd);
 void	ft_write_lst(t_list *node);
 t_list	*ft_lstget(t_list *node, size_t pos);
 void	ft_rot13_data(void *data);
+void	*ft_rot13dup_data(void *data);
 
 #endif // UTILS_H

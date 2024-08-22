@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/20 18:19:33 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/22 15:36:48 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,6 +67,7 @@ SOURCES_BONUS =			\
 	ft_lstdelone.c		\
 	ft_lstclear.c		\
 	ft_lstiter.c		\
+	ft_lstmap.c			\
 
 # Target
 TARGET = libft.a

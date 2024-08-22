@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 17:54:02 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/20 19:07:17 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 15:35:32 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,4 +78,13 @@ void	ft_rot_data(void *data, int rot)
 void	ft_rot13_data(void *data)
 {
 	ft_rot_data(data, 13);
+}
+
+void	*ft_rot13dup_data(void *data)
+{
+	char	*str;
+
+	str = ft_strdup((char *) data);
+	ft_rot_str(str, 13);
+	return ((void *) str);
 }

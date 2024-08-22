@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/20 18:20:22 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/22 15:36:56 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,6 +87,7 @@ BONUS_TESTS =				\
 	ft_lstdelone_test.c		\
 	ft_lstclear_test.c		\
 	ft_lstiter_test.c		\
+	ft_lstmap_test.c		\
 
 # Libraries
 LIBRARIES =	\
