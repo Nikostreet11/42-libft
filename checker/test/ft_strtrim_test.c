@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/17 10:31:15 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:22:18 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 int	main(int argc, char *argv[])
 {
 	char	*trim;
-	
+
 	if (argc != 3)
 	{
 		printf("Error. Usage: s1 (string), s2 (string)\n");

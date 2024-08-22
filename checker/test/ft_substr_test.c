@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr_test.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 16:30:50 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/15 18:45:57 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:24:10 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int argc, char *argv[])
 	size_t	start;
 	size_t	len;
 	char	*sub;
-	
+
 	if (argc != 4)
 	{
 		printf("Error. Usage: s (string), start (uint), len (uint)\n");

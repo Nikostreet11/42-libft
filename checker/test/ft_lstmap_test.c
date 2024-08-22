@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 15:36:19 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:24:24 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(int argc, char **argv)
 	t_list	*node;
 	t_list	*map;
 	size_t	idx;
-	
+
 	if (argc < 1)
 	{
 		printf("Error.\n");

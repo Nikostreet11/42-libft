@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 11:59:13 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/15 17:57:09 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:12:43 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 static int	is_overflow(size_t a, size_t b)
 {
 	int	mul;
-	
+
 	if (a == 0 || b == 0)
 	{
 		return (0);

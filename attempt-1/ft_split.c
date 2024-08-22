@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 13:44:21 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/17 13:51:09 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 15:50:18 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ static size_t	ft_tokenlen(char const *str, char c)
 	}
 	return (idx);
 }
+
 static size_t	ft_tokens(char const *str, char c)
 {
 	size_t	num;

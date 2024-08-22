@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/02 10:29:28 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/04 15:21:04 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 15:59:30 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *s, int c)
 	{
 		if (s[idx] == c)
 		{
-			return (char *) (s + idx);
+			return ((char *) s + idx);
 		}
 		idx++;
 	}

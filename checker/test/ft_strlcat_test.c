@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat_test.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:50 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/04 15:22:05 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:22:32 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int argc, char *argv[])
 	char	test0[42];
 	char	test1[42];
 	int		siz;
-	
+
 	if (argc != 3)
 	{
 		printf("Error. Usage: src (string), size (uint)\n");

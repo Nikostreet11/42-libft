@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 18:18:34 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/15 18:47:31 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:01:33 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t min(size_t a, size_t b)
+static size_t	min(size_t a, size_t b)
 {
 	if (a < b)
 	{

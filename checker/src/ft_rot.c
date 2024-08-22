@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 17:54:02 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 15:35:32 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:30:30 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ static int	ft_mod(int a, unsigned int b)
 
 char	ft_rot(char c, int rot)
 {
-	unsigned int offset;
-	unsigned int size;
+	unsigned int	offset;
+	unsigned int	size;
 
 	if (ft_isalpha(c))
 	{
@@ -67,17 +67,12 @@ void	ft_rot_str(char *str, int rot)
 	}
 }
 
-void	ft_rot_data(void *data, int rot)
+void	ft_rot13_data(void *data)
 {
 	char	*str;
 
 	str = (char *) data;
-	ft_rot_str(str, rot);
-}
-
-void	ft_rot13_data(void *data)
-{
-	ft_rot_data(data, 13);
+	ft_rot_str(str, 13);
 }
 
 void	*ft_rot13dup_data(void *data)

@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/08 18:06:01 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:21:11 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 int	main(int argc, char *argv[])
 {
 	int		fd;
-	
+
 	if (argc != 2)
 	{
 		printf("Error. Usage: n (int)\n");

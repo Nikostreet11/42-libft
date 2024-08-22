@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/31 11:58:08 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:22:26 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static void	ft_iter(unsigned int idx, char *c)
 int	main(int argc, char *argv[])
 {
 	char	*str;
-	
+
 	if (argc != 2)
 	{
 		printf("Error. Usage: s (string)\n");

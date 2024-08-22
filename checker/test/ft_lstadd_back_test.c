@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/11 16:37:35 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:22:03 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(int argc, char **argv)
 	t_list	*head;
 	t_list	*node;
 	size_t	idx;
-	
+
 	if (argc < 1)
 	{
 		printf("Error.\n");
@@ -38,6 +38,6 @@ int	main(int argc, char **argv)
 	write(STDOUT_FILENO, "Received: ", 10);
 	ft_write_lst(head);
 	write(STDOUT_FILENO, "\n", 1);
-	// TODO: free list
+	ft_lstclear(&head, free);
 	return (0);
 }

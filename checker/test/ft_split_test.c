@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/31 19:22:31 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:20:56 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 int	main(int argc, char *argv[])
 {
 	char	**split;
-	
+
 	if (argc != 3 || ft_strlen(argv[2]) != 1)
 	{
 		printf("Error. Usage: s (string), c (char)\n");

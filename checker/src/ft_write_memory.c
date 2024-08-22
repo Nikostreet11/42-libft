@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_write_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 12:50:05 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/15 12:54:32 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:19:39 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -6,13 +6,13 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/09 12:50:32 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/11 15:23:44 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 15:52:46 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int		ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	size_t	idx;
 

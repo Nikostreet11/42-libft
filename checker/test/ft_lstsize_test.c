@@ -6,12 +6,12 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/11 15:26:06 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:23:39 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 #include "utils.h"
 #include "libft.h"
 
@@ -20,7 +20,7 @@ int	main(int argc, char **argv)
 	t_list	*head;
 	t_list	*node;
 	size_t	idx;
-	
+
 	if (argc < 1)
 	{
 		printf("Error.\n");
@@ -35,6 +35,6 @@ int	main(int argc, char **argv)
 		idx++;
 	}
 	printf("Received: %d\n", ft_lstsize(head));
-	// TODO: free list
+	ft_lstclear(&head, free);
 	return (0);
 }

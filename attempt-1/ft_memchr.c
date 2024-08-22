@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 15:42:22 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/04 16:00:13 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:03:17 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (mem[idx] == (unsigned char) c)
 		{
-			return (void *) (mem + idx);
+			return ((void *) mem + idx);
 		}
 		idx++;
 	}

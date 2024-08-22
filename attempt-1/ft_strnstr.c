@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 12:49:05 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/15 12:05:01 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 15:58:24 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	l_len = ft_strlen(little);
 	if (l_len == 0)
 	{
-		return (char *) (big);
+		return ((char *) big);
 	}
 	b_idx = 0;
 	while (big[b_idx] && b_idx + l_len < len + 1)
@@ -35,7 +35,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			l_idx++;
 			if (little[l_idx] == 0)
 			{
-				return (char *) (big + b_idx);
+				return ((char *) big + b_idx);
 			}
 		}
 		b_idx++;

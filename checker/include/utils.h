@@ -6,11 +6,11 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 15:45:41 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 15:36:34 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:30:07 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	UTILS_H
+#ifndef UTILS_H
 # define UTILS_H
 
 # include <stddef.h>

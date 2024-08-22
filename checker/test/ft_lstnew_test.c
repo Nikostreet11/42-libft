@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/10 22:04:02 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:21:04 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 int	main(int argc, char **argv)
 {
 	t_list	*node;
-	
+
 	if (argc != 2)
 	{
 		printf("Error. Usage: x (any)\n");

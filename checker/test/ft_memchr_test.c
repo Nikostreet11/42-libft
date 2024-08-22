@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr_test.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 15:54:32 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/04 16:07:49 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:20:22 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 int	main(int argc, char **argv)
 {
 	size_t	n;
-	
+
 	if (argc != 4 || ft_strlen(argv[2]) != 1)
 	{
 		printf("Error. Usage: s (string), c (char), n (uint)\n");
