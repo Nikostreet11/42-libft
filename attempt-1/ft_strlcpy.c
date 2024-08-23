@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipollin <nipollin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:07:21 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/04 15:21:10 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/23 11:36:48 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		dest[idx] = src[idx];
 		idx++;
 	}
-	dest[idx] = '\0';
+	if (idx < size)
+	{
+		dest[idx] = '\0';
+	}
 	return (ft_strlen(src));
 }
