@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 18:18:34 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 16:01:33 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/23 12:52:30 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,19 @@ static size_t	min(size_t a, size_t b)
 	return (b);
 }
 
+static char	*ft_emptystr(void)
+{
+	char	*str;
+
+	str = (char *) ft_calloc(1, sizeof(char));
+	if (!str)
+	{
+		return (NULL);
+	}
+	*str = '\0';
+	return (str);
+}
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
@@ -28,9 +41,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	s_len;
 
 	s_len = ft_strlen(s);
-	if (s_len < start)
+	if (s_len < start || len == 0)
 	{
-		return (NULL);
+		return (ft_emptystr());
 	}
 	sub_len = min(s_len - start, len);
 	sub = (char *) ft_calloc(sub_len + 1, sizeof(char));
