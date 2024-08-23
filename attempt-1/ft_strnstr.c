@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 12:49:05 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 15:58:24 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/23 14:26:32 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		return ((char *) big);
 	}
 	b_idx = 0;
-	while (big[b_idx] && b_idx + l_len < len + 1)
+	while (big[b_idx] && b_idx + l_len <= len)
 	{
 		l_idx = 0;
 		while (big[b_idx + l_idx] && big[b_idx + l_idx] == little[l_idx])
