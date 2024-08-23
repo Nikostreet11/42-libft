@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 13:44:21 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 15:50:18 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/23 14:56:04 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ char	**ft_split(char const *s, char c)
 	{
 		s = ft_next_token(s, c);
 		token_l = ft_tokenlen(s, c);
-		split[split_i] = (char *) calloc(token_l + 1, sizeof(char));
+		split[split_i] = (char *) ft_calloc(token_l + 1, sizeof(char));
 		if (!split[split_i])
 			return (ft_free_strstr(split, split_i));
 		ft_strlcpy(split[split_i], s, token_l + 1);
