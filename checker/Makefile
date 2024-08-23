@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/22 15:36:56 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/23 11:24:18 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -104,16 +104,16 @@ LDN = $(addprefix	-l, $(LIBRARIES))
 
 TST_BNS = $(addprefix	$(TSTDIR)/, $(BONUS_TESTS))
 
-# Target
-TARGET = $(patsubst $(TSTDIR)/%.c,$(BLDDIR)/%, $(TST))
-TARGET_BONUS = $(patsubst $(TSTDIR)/%.c,$(BLDDIR)/%, $(TST_BNS))
+# TARGET
+NAME = $(patsubst $(TSTDIR)/%.c,$(BLDDIR)/%, $(TST))
+NAME_BONUS = $(patsubst $(TSTDIR)/%.c,$(BLDDIR)/%, $(TST_BNS))
 
 .PHONY: all clean fclean re bonus
 .PRECIOUS: obj/%.o
 
-all: $(TARGET)
+all: $(NAME)
 
-bonus: all $(TARGET_BONUS)
+bonus: all $(NAME_BONUS)
 
 $(BLDDIR)/%: $(OBJ) $(TSTDIR)/%.c | $(BLDDIR)
 	$(CC) $(CFLAGS) $(INC) $(FTH) -o $@ $^ $(LDP) $(LDN)
@@ -129,8 +129,8 @@ clean:
 	rm -fd $(OBJDIR)
 
 fclean: clean
-	rm -f $(TARGET)
-	rm -f $(TARGET_BONUS)
+	rm -f $(NAME)
+	rm -f $(NAME_BONUS)
 	rm -fd $(BLDDIR)
 
 re: fclean all
