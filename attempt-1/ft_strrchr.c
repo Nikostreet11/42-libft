@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/02 10:29:28 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 15:59:09 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/23 13:05:34 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (idx)
 	{
 		idx--;
-		if (s[idx] == c)
+		if (s[idx] == (char) c)
 		{
 			return ((char *) s + idx);
 		}
