@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 14:00:49 by nipollin          #+#    #+#             */
-/*   Updated: 2024/07/30 17:21:57 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/26 13:29:12 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,15 @@ static size_t	ft_strccat(char *dest, const char c)
 	return (idx + 1);
 }
 
+static void	ft_itoa_init(char *str, int sign)
+{
+	*str = '\0';
+	if (sign == -1)
+	{
+		ft_strccat(str, '-');
+	}
+}
+
 char	*ft_itoa_r(int num, int sign, size_t len)
 {
 	char	digit;
@@ -35,15 +44,19 @@ char	*ft_itoa_r(int num, int sign, size_t len)
 	if (num > 9)
 	{
 		str = ft_itoa_r(num / 10, sign, len + 1);
+		if (!str)
+		{
+			return (NULL);
+		}
 	}
 	else
 	{
 		str = (char *) ft_calloc(len + 1, sizeof(char));
-		*str = '\0';
-		if (sign == -1)
+		if (!str)
 		{
-			ft_strccat(str, '-');
+			return (NULL);
 		}
+		ft_itoa_init(str, sign);
 	}
 	digit = (num % 10) + '0';
 	ft_strccat(str, digit);
