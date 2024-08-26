@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/26 11:31:57 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/26 15:32:09 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,7 +82,7 @@ OBJ_BNS = $(patsubst	$(SRCDIR)/%.c, $(OBJDIR)/%.o, $(SRC_BNS))
 
 .PHONY: all clean fclean re bonus
 
-all: $(OBJDIR) $(NAME)
+all: $(NAME) | $(OBJDIR)
 
 $(OBJDIR):
 	mkdir -p $(OBJDIR)
@@ -93,7 +93,7 @@ $(NAME): $(OBJ)
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
 
-bonus: $(OBJDIR) $(NAME)_bonus
+bonus: $(NAME)_bonus | $(OBJDIR)
 
 $(NAME)_bonus: $(OBJ) $(OBJ_BNS)
 	ar rs $(NAME) $^
@@ -101,7 +101,7 @@ $(NAME)_bonus: $(OBJ) $(OBJ_BNS)
 clean:
 	rm -f $(OBJDIR)/*.o
 	@if [ -d "$(OBJDIR)" ] && [ -z "$$(ls -A $(OBJDIR))" ]; then \
-        rmdir $(OBJDIR); \
+		rmdir $(OBJDIR); \
 	fi
 
 fclean: clean
