@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 15:02:44 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/26 15:54:34 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/26 16:03:34 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*node;
 	void	*data;
 
-	if (!f)
+	if (!f || !del)
 	{
 		return (NULL);
 	}
