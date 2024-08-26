@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/23 11:23:38 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/26 11:31:57 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 # Directories
 SRCDIR = .
-OBJDIR = obj
+OBJDIR = .
 INCDIR = .
 
 # Source
@@ -100,7 +100,9 @@ $(NAME)_bonus: $(OBJ) $(OBJ_BNS)
 
 clean:
 	rm -f $(OBJDIR)/*.o
-	rm -fd $(OBJDIR)
+	@if [ -d "$(OBJDIR)" ] && [ -z "$$(ls -A $(OBJDIR))" ]; then \
+        rmdir $(OBJDIR); \
+	fi
 
 fclean: clean
 	rm -f $(NAME)
