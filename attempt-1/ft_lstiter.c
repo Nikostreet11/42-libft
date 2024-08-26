@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/09 12:50:32 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 15:53:34 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/26 15:53:53 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
+	if (!f)
+	{
+		return ;
+	}
 	while (lst)
 	{
 		f(lst->content);
