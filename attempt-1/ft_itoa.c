@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 14:00:49 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/26 13:29:12 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/26 15:40:42 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static void	ft_itoa_init(char *str, int sign)
 	}
 }
 
-char	*ft_itoa_r(int num, int sign, size_t len)
+static char	*ft_itoa_r(int num, int sign, size_t len)
 {
 	char	digit;
 	char	*str;
