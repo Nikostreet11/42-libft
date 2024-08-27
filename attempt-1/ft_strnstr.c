@@ -6,14 +6,11 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 12:49:05 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/23 14:26:32 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:01:23 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-#define TRUE 1
-#define FALSE 0
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -40,5 +37,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		}
 		b_idx++;
 	}
-	return (0);
+	return (NULL);
 }
