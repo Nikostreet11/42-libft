@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/23 11:24:18 by nipollin         ###   ########.fr        #
+#    Updated: 2024/08/27 12:34:32 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,8 @@ SOURCES = 				\
 	ft_write_file.c		\
 	ft_write_lst.c		\
 	ft_lstget.c			\
+	ft_iter.c			\
+	ft_map.c			\
 	ft_rot.c			\
 
 # Tests

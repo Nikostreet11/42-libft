@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri_test.c                                 :+:      :+:    :+:   */
+/*   ft_iter.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/27 12:29:33 by nipollin         ###   ########.fr       */
+/*   Created: 2024/08/27 12:27:35 by nipollin          #+#    #+#             */
+/*   Updated: 2024/08/27 12:54:11 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "utils.h"
-#include "libft.h"
 
-int	main(int argc, char *argv[])
+void	ft_iter(unsigned int idx, char *c)
 {
-	char	*str;
-
-	if (argc != 2)
-	{
-		printf("Error. Usage: s (string)\n");
-		return (1);
-	}
-	str = argv[1];
-	ft_striteri(str, ft_iter);
-	printf("Received: %s\n", str);
-	return (0);
+	*c = *c - 5 + idx % 10;
 }

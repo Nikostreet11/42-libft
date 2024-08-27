@@ -6,7 +6,7 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 15:09:00 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 16:22:42 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:29:35 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,6 @@
 #include <stdlib.h>
 #include "utils.h"
 #include "libft.h"
-
-static char	ft_map(unsigned int idx, char c)
-{
-	return (c - 5 + idx % 10);
-}
 
 int	main(int argc, char *argv[])
 {
