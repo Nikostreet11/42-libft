@@ -6,11 +6,10 @@
 /*   By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 12:32:59 by nipollin          #+#    #+#             */
-/*   Updated: 2024/08/22 16:02:06 by nipollin         ###   ########.fr       */
+/*   Updated: 2024/11/12 12:29:22 by nipollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <errno.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s)
@@ -23,7 +22,6 @@ char	*ft_strdup(const char *s)
 	d = (char *) ft_calloc(size, sizeof(char));
 	if (d == NULL)
 	{
-		errno = ENOMEM;
 		return (NULL);
 	}
 	idx = 0;
