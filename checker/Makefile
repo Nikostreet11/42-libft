@@ -6,7 +6,7 @@
 #    By: nipollin <nipollin@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/11 11:33:03 by nipollin          #+#    #+#              #
-#    Updated: 2024/08/27 12:34:32 by nipollin         ###   ########.fr        #
+#    Updated: 2024/11/12 10:26:27 by nipollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ BLDDIR = bin
 INCDIR = include
 
 # Extern directories
-TRYDIR = ../attempt-1
+TRYDIR = ../attempt-2
 FTHDIR = .
 FTLDIR = .
 FTHDIR := $(addprefix	$(TRYDIR)/, $(FTHDIR))
